@@ -13,10 +13,30 @@ const links = [
   { id: "contact", label: "Contact" },
 ];
 
+function useVisitorCount() {
+  const [count, setCount] = useState<number | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch("/api/visitor", { method: "GET" });
+        if (!res.ok) return;
+        const data = await res.json();
+        if (!cancelled && typeof data.count === "number") setCount(data.count);
+      } catch {
+        /* offline — leave hidden */
+      }
+    })();
+    return () => { cancelled = true; };
+  }, []);
+  return count;
+}
+
 export function Nav() {
   const { openResume } = useSiteUI();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const visitorCount = useVisitorCount();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -74,6 +94,15 @@ export function Nav() {
             >
               Ask AI
             </button>
+            {visitorCount !== null && (
+              <span
+                className="font-mono text-[11px] font-bold uppercase tracking-[0.15em] px-4 py-2 border border-line text-mid select-none"
+                aria-label={`${visitorCount.toLocaleString("en-US")} portfolio visits`}
+              >
+                ◉ {visitorCount.toLocaleString("en-US")}{" "}
+                <span className="hidden xl:inline">VISITS</span>
+              </span>
+            )}
           </div>
 
           <button
@@ -125,6 +154,14 @@ export function Nav() {
               >
                 Ask AI
               </button>
+              {visitorCount !== null && (
+                <div
+                  className="font-mono text-[11px] font-bold uppercase tracking-[0.15em] px-4 py-3 border border-line text-mid"
+                  aria-label={`${visitorCount.toLocaleString("en-US")} portfolio visits`}
+                >
+                  ◉ {visitorCount.toLocaleString("en-US")} VISITS
+                </div>
+              )}
             </div>
           </div>
         </div>

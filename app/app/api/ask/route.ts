@@ -198,7 +198,7 @@ function composeDeterministic(q: string): {
   };
 }
 
-const GEMINI_MODEL = "gemini-1.5-flash";
+const GEMINI_MODEL = "gemini-3.6-flash";
 
 async function composeWithLLM(q: string): Promise<{
   answer: string;

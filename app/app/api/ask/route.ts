@@ -17,13 +17,13 @@ const FALLBACK = "I don't have verified information about that.";
 
 const TYPE_BOOSTS: Record<string, string[]> = {
   projects: ["project", "built", "build", "pyramids", "ondc", "bap", "barter", "metalks", "mcp", "github", "app"],
-  experience: ["experience", "intern", "internship", "job", "work", "openidea", "fnf", "coliving", "role"],
+  experience: ["experience", "intern", "internship", "job", "work", "openidea", "fnf", "coliving"],
   research: ["research", "paper", "jics", "journal", "stress", "publication", "published"],
   leadership: ["leadership", "president", "club", "mentor", "lead", "gdsc", "aws"],
   education: ["education", "university", "b.tech", "degree", "gautam", "college"],
   skills: ["skills", "skill", "stack", "technology", "python", "react", "sql", "tools"],
   profile: ["profile", "who", "about", "background", "position", "identity"],
-  roles: ["role", "fit", "suitable", "product", "manager", "engineer", "scientist", "analyst"],
+  roles: ["role", "roles", "fit", "suit", "suitable", "product", "manager", "engineer", "scientist", "analyst"],
 };
 
 const ML_ROLE_TERMS = ["ml engineer", "ai engineer", "ml role", "ai role", "model", "fine-tun", "llm", "mcp", "machine learning engineer"];
@@ -39,12 +39,27 @@ const STOP = new Set(
 // Name/self-references appear in almost every chunk — low signal, exclude from overlap.
 const LOW_SIGNAL = new Set(["aaqib", "abdullah", "his", "him", "he", "she", "they", "their", "my", "i", "you", "we", "our"]);
 
+const QUERY_EXPANSION: [RegExp, string[]][] = [
+  [/\b(study|studying|studies|learn|learning)\b/i, ["education"]],
+  [/\b(looking for|looking|seeking)\b/i, ["role", "roles"]],
+  [/\b(who is|who are)\b/i, ["profile"]],
+];
+
 function tokens(text: string): string[] {
-  return text
-    .toLowerCase()
+  let expanded = text.toLowerCase();
+  for (const [pattern, synonyms] of QUERY_EXPANSION) {
+    if (pattern.test(expanded)) expanded += " " + synonyms.join(" ");
+  }
+  return expanded
     .replace(/[^a-z0-9\s]/g, " ")
     .split(/\s+/)
     .filter((w) => w.length > 2 && !STOP.has(w) && !LOW_SIGNAL.has(w));
+}
+
+function identityIntent(q: string): "profile" | null {
+  const s = q.toLowerCase();
+  if (/(who is|who are|about aaqib|about him|tell me about)\b/.test(s)) return "profile";
+  return null;
 }
 
 function clean(t: string): string {
@@ -74,18 +89,34 @@ function detectResumeIntent(q: string): string | null {
 
 function detectType(q: string): string | null {
   const s = q.toLowerCase();
-  if (/(who is|tell me about|about aaqib|about him|profile|overview|background|introduce)/.test(s)) {
-    return "profile";
+  for (const [pattern, synonyms] of QUERY_EXPANSION) {
+    if (pattern.test(s)) {
+      for (const syn of synonyms) {
+        for (const [t, terms] of Object.entries(TYPE_BOOSTS)) {
+          if (terms.includes(syn)) return t;
+        }
+      }
+    }
   }
   for (const [t, terms] of Object.entries(TYPE_BOOSTS)) {
     if (terms.some((term) => s.includes(term))) return t;
+  }
+  if (/(who is|who are|about aaqib|about him|profile|overview|background|introduce)/.test(s)) {
+    return "profile";
   }
   return null;
 }
 
 function retrieve(q: string, forcedType?: string | null): { hits: { chunk: Chunk; score: number }[] } {
-  const tq = tokens(q);
+  let tq = tokens(q);
   const type = forcedType ?? detectType(q);
+
+  if (tq.length === 0) {
+    const identity = identityIntent(q);
+    if (identity) {
+      tq = ["profile"];
+    }
+  }
 
   const scored: { chunk: Chunk; score: number }[] = [];
   for (const chunk of KB.chunks) {
@@ -121,6 +152,11 @@ function summarizeChunk(chunk: Chunk, maxBullets = 4): string {
   return out.join("\n").trim();
 }
 
+function isOverviewChunk(chunk: Chunk): boolean {
+  const c = clean(chunk.content);
+  return c.length < 60 || /^\*?\*?Version:/.test(c) || /^Status:/.test(c);
+}
+
 function composeDeterministic(q: string): {
   answer: string;
   references: Chunk[];
@@ -151,7 +187,8 @@ function composeDeterministic(q: string): {
     return { answer: FALLBACK, references: [], source: "fallback" };
   }
 
-  const top = hits.slice(0, 3);
+  const contentHits = hits.filter((h) => !isOverviewChunk(h.chunk));
+  const top = (contentHits.length > 0 ? contentHits : hits).slice(0, 3);
   const parts = top.map((h) => summarizeChunk(h.chunk));
   const answer = parts.join("\n\n");
   return {
@@ -161,13 +198,18 @@ function composeDeterministic(q: string): {
   };
 }
 
+const GEMINI_MODEL = "gemini-2.5-flash";
+
 async function composeWithLLM(q: string): Promise<{
   answer: string;
   references: Chunk[];
   source: "llm" | "retrieval" | "fallback";
 } | null> {
   const key = process.env.GEMINI_API_KEY;
-  if (!key) return null;
+  if (!key) {
+    console.warn("[ai] GEMINI_API_KEY not set — falling back to deterministic");
+    return null;
+  }
 
   const resumeIntent = detectResumeIntent(q);
   const { hits } =
@@ -194,7 +236,7 @@ async function composeWithLLM(q: string): Promise<{
 
   try {
     const res = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + key,
+      `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=` + key,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -203,18 +245,28 @@ async function composeWithLLM(q: string): Promise<{
           contents: [{ role: "user", parts: [{ text: user }] }],
           generationConfig: { temperature: 0.2, maxOutputTokens: 600 },
         }),
-        signal: AbortSignal.timeout(12000),
+        signal: AbortSignal.timeout(15000),
       }
     );
 
-    if (!res.ok) return null;
+    if (!res.ok) {
+      const errBody = await res.text().catch(() => "");
+      const sanitized = errBody.slice(0, 200).replace(/["']/g, "");
+      console.error(`[ai] Gemini API error: status=${res.status} model=${GEMINI_MODEL} body=${sanitized}`);
+      return null;
+    }
     const data = await res.json();
     const text: string | undefined = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (!text) return null;
+    if (!text) {
+      console.warn(`[ai] Gemini returned empty text: model=${GEMINI_MODEL}`);
+      return null;
+    }
 
     const references = hits.slice(0, 3).map((h) => h.chunk);
     return { answer: text.trim(), references, source: "llm" };
-  } catch {
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[ai] Gemini fetch failed: model=${GEMINI_MODEL} error=${msg.slice(0, 200)}`);
     return null;
   }
 }

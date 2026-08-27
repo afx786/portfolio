@@ -69,7 +69,7 @@ function chunkMarkdown(text, type) {
         type,
         section: currentHeading || "overview",
         content,
-        keywords: keywordsOf(title + "\n" + content),
+        keywords: [...new Set([type, ...keywordsOf(title + "\n" + content)])],
       });
     }
   };

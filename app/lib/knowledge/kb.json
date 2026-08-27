@@ -32,6 +32,7 @@
       "section": "Degree",
       "content": "- **Institution:** Gautam Buddha University, Greater Noida, Uttar Pradesh, India\n- **Degree:** Bachelor of Technology in Computer Science Engineering\n- **Specialization:** Data Science (as described in portfolio positioning; the program is B.Tech CSE) `[resume-claim]`\n- **Dates:** 2023–2027 `[resume-claim; consistent across all resumes and portfolio]`\n- **Year status:** Final-year student (batch 2023–2027; as of Aug 2026 entering final academic year). `[user-confirmed]`",
       "keywords": [
+        "education",
         "year",
         "degree",
         "science",
@@ -64,6 +65,7 @@
       "section": "Relevant credential anchors",
       "content": "- Research affiliation used in publication: Dept. of Information Technology, Gautam Buddha University. `[verified-paper]`\n- Represented GBU at the All India National University Games (Table Tennis). `[user-confirmed]`",
       "keywords": [
+        "education",
         "university",
         "relevant",
         "credential",
@@ -109,6 +111,7 @@
       "section": "1. OpenIdea (Ecosysz Core Solutions Pvt Ltd) — AI/LLM Systems Engineer Intern",
       "content": "- **Dates:** 1 June 2026 – Present (ongoing) `[user-confirmed]`\n- **Type:** Full-time, remote `[user-confirmed]`\n- **Context:** ~10 employees; reports to the Founder; works closely with the Founder's Office `[user-confirmed]`\n- **Primary work scope:** ONDC + LLM integration, MCP servers, Open-Barter `[user-confirmed]`\n\n**Built / contributed to (all attributed to the internship, not personal ownership):** `[user-confirmed]`\n- ONDC Buyer App / BAP — certified, live in production (see projects.md)\n- Open-Barter / BarterEngine — AI barter-matching prototype\n- mcp-openidea-search — MCP server package (contributed)\n- WhatsApp → website POC\n- n8n LeadGen — automated B2B lead-generation pipeline\n- job-automation — config-driven job-application automation\n- Bhojpatra — event/feast booking platform\n\n**Approved metrics / framing:** `[user-confirmed]`\n- ONDC: implemented, self-tested, certified, live in production with real production operation. Do NOT describe as prototype/awaiting-first-transaction.\n- Postgres/Supabase data layer: LIVE IN PRODUCTION.\n- BarterEngine: prototype built during the internship; attribute to OpenIdea internship work.\n- MCP: publicly live on PyPI; attribution = \"contributed to OpenIdea\".\n\n**Removed claim:** \"Reduced latency by 40%\" — no verified evidence. `[user-confirmed]`",
       "keywords": [
+        "experience",
         "user",
         "confirmed",
         "openidea",
@@ -141,6 +144,7 @@
       "section": "2. FnF Coliving — Research & Development Intern",
       "content": "- **Dates:** Jan 2026 – Feb 2026 (completed) `[resume-claim]`\n- **Type:** Remote `[resume-claim]`\n- **Work:** Market intelligence and competitor benchmarking across flexible-rental models; synthesized findings into strategic product-expansion recommendations. `[resume-claim]`\n- **Deliverable format:** Report + presentation. `[user-confirmed]`\n- **Evidence:** LOR available (see links.md — LORs folder). `[user-confirmed]`",
       "keywords": [
+        "experience",
         "resume",
         "claim",
         "2026",
@@ -173,6 +177,7 @@
       "section": "3. Google Developer Student Clubs (GDSC) — Data Science Lead",
       "content": "- **Dates:** 2025–2026 `[resume-claim]`\n- **Work:** Led Python/ML/applied-AI workshops; conducted approximately **1–2 workshops**. `[resume-claim; count user-confirmed]`\n- **Do NOT invent attendee numbers.** `[user-confirmed]`",
       "keywords": [
+        "experience",
         "resume",
         "claim",
         "workshops",
@@ -205,6 +210,7 @@
       "section": "4. AWS Student Builder Team — Mentor, AI/ML Team",
       "content": "- **Dates:** 2025–2026 `[resume-claim]`\n- **Work:** Guided students on ML fundamentals, model-development workflows, and practical AI architecture from ideation to deployment; conducted approximately **3 workshops**. `[resume-claim; count user-confirmed]`\n- **Do NOT invent attendee numbers.** `[user-confirmed]`",
       "keywords": [
+        "experience",
         "team",
         "resume",
         "claim",
@@ -251,6 +257,7 @@
       "section": "President — Official Film & Photography Club, Gautam Buddha University",
       "content": "- **Dates:** 2025–2026 `[user-confirmed]`\n- **Scope:** ~35 members `[user-confirmed]`\n- **Key work:**\n  - Organized/handled the media team for **Abhivyanjana Cultural Fest** and **Ignition Technical Fest**; the entire media team operated under my leadership for these events. `[user-confirmed]`\n  - Worked on movies, short films, and reels. `[user-confirmed]`",
       "keywords": [
+        "leadership",
         "user",
         "confirmed",
         "media",
@@ -283,6 +290,7 @@
       "section": "Media Team Lead",
       "content": "- **Scope:** 4 university fests (2 cultural, 2 technical), 3 hackathons, 2 international conferences. `[resume-claim]` `[user-confirmed]`\n- **Signature events:** Abhivyanjana, Ignition. `[user-confirmed]`\n- **Evidence:** achievements folder link (see links.md). `[user-confirmed]`",
       "keywords": [
+        "leadership",
         "user",
         "confirmed",
         "media",
@@ -315,6 +323,7 @@
       "section": "Data Science Lead — Google Developer Student Clubs (GDSC)",
       "content": "- **Dates:** 2025–2026 `[resume-claim]`\n- **Work:** Led Python/ML/applied-AI workshops; **~1–2 workshops** conducted. `[resume-claim; count user-confirmed]`\n- Do not invent attendee numbers. `[user-confirmed]`",
       "keywords": [
+        "leadership",
         "resume",
         "claim",
         "workshops",
@@ -347,6 +356,7 @@
       "section": "Mentor, AI/ML Team — AWS Student Builder Team",
       "content": "- **Dates:** 2025–2026 `[resume-claim]`\n- **Work:** Guided students on ML fundamentals, model-development workflows, and practical AI architecture (ideation → deployment); **~3 workshops** conducted. `[resume-claim; count user-confirmed]`\n- Do not invent attendee numbers. `[user-confirmed]`",
       "keywords": [
+        "leadership",
         "team",
         "resume",
         "claim",
@@ -379,6 +389,7 @@
       "section": "Achievements (extracurricular)",
       "content": "- **Table Tennis:** Delhi state-ranked player (2022); represented Gautam Buddha University at the All India National University Games. Include under Achievements. `[resume-claim]` `[user-confirmed]`",
       "keywords": [
+        "leadership",
         "achievements",
         "university",
         "extracurricular",
@@ -433,6 +444,7 @@
       "section": "Displayed social / contact links",
       "content": "| Link | URL | Status |\n|---|---|---|\n| LinkedIn | https://www.linkedin.com/in/aaqib-abdullah-8620b2292/ | CONFIRMED `[user-confirmed]` |\n| GitHub | https://github.com/afx786 | CONFIRMED `[user-confirmed; repos verified]` |\n| Instagram | instagram.com/afx.exe | CONFIRMED `[user-confirmed]` |\n| Email | aaqibabdullah2006@gmail.com | CONFIRMED `[resume-claim; paper-confirmed]` |",
       "keywords": [
+        "links",
         "confirmed",
         "user",
         "linkedin",
@@ -442,7 +454,6 @@
         "displayed",
         "social",
         "contact",
-        "links",
         "link",
         "status",
         "aaqib",
@@ -464,6 +475,7 @@
       "section": "Project links",
       "content": "| Project | URL | Status |\n|---|---|---|\n| Pyramids | https://pyramids-connect.vercel.app/ | CONFIRMED `[user-confirmed]` |\n| Pyramids repo | https://github.com/afx786/pyramids | CONFIRMED `[verified-code]` |\n| Open-Barter | https://open-barter.vercel.app/ | CONFIRMED `[user-confirmed]` |\n| MeTalks repo | https://github.com/afx786/MeTalks | CONFIRMED `[user-confirmed]` |\n| mcp-openidea-search (PyPI) | https://pypi.org/project/mcp-openidea-search/0.1.1/ | CONFIRMED `[user-confirmed]` |\n| Trader Behaviour repo | https://github.com/afx786/trader_behaviour_insights | CONFIRMED `[user-confirmed]` |\n| FAANG repo | https://github.com/afx786/stock_analysis_project | CONFIRMED `[verified-code]` |\n| Automated Rail Management repo | https://github.com/afx786/automated_metro_rail_management | CONFIRMED `[user-confirmed]` (honest framing; simulated Maximo data) |\n| Dental Anomaly repo | https://github.com/afx786/dental-anomaly-detection | CONFIRMED `[user-confirmed]` |\n| Recipe Recommender repo | https://github.com/afx786/recipe_recommender_system | CONFIRMED `[user-confirmed]` |\n| WhatsApp→website POC | [[PH-05]] | PENDING |\n| n8n LeadGen / job-automation / Bhojpatra | [[PH-04]] | PENDING |",
       "keywords": [
+        "links",
         "confirmed",
         "https",
         "user",
@@ -496,6 +508,7 @@
       "section": "Research / credentials links",
       "content": "| Item | URL | Status |\n|---|---|---|\n| JICS stress-classification paper | https://drive.google.com/file/d/1l2QhNG4DW_pXLyqfU9wB9QUgBdiHusWC/view?usp=drive_link | CONFIRMED `[user-confirmed]` |\n| JICS journal issue page / DOI | [[PH-02]] | PENDING |\n| Achievements folder | https://drive.google.com/drive/folders/112CIDhPhGnD-icdXtWvgQYVis0xxG1ST?usp=drive_link | CONFIRMED `[user-confirmed]` |\n| LORs folder | https://drive.google.com/drive/folders/1J8yaHKtLJ-2TEQFJJNDaOAzj5G5Q-bEP?usp=drive_link | CONFIRMED `[user-confirmed]` |\n| FnF LOR (specific file, if displayed) | [[PH-07]] — from LORs folder | OPTIONAL |\n| IBM Data Science Professional Certificate | achievements folder | CONFIRMED `[user-confirmed]` |\n| McKinsey Forward Program | achievements folder | CONFIRMED `[user-confirmed]` |\n| 160 Days of DSA (GeeksforGeeks) | achievements folder | CONFIRMED `[user-confirmed]` |\n| Mastering GenAI and ChatGPT (GeeksforGeeks) | achievements folder | CONFIRMED `[user-confirmed]` |\n| Resume — AI / ML Engineer | https://drive.google.com/file/d/1bWHOOYZiG7icwgxhQKIS4LJa0OLCe4p4/view?usp=drive_link | CONFIRMED `[user-confirmed]` |\n| Resume — Data Scientist / Analyst | https://drive.google.com/file/d/1FJO1_g-gI-ds9ob_gJlWygsWRznoRRIT/view?usp=sharing | CONFIRMED `[user-confirmed]` |\n| Resume — Product Manager | [[PH-06]] | PENDING |",
       "keywords": [
+        "links",
         "confirmed",
         "user",
         "drive",
@@ -516,7 +529,6 @@
         "geeksforgeeks",
         "research",
         "credentials",
-        "links",
         "item",
         "status",
         "stress"
@@ -528,6 +540,7 @@
       "section": "Not displayed (per user)",
       "content": "- X/Twitter · ResearchGate · Kaggle · other social — EXCLUDED unless explicitly provided later. `[user-confirmed]`",
       "keywords": [
+        "links",
         "user",
         "displayed",
         "twitter",
@@ -548,8 +561,8 @@
       "section": "overview",
       "content": "**Version:** v1.0 · Status: CANONICAL · Source tags per PORTFOLIO_KNOWLEDGE_BASE.md",
       "keywords": [
-        "knowledge",
         "profile",
+        "knowledge",
         "master",
         "professional",
         "version",
@@ -567,6 +580,7 @@
       "section": "Identity",
       "content": "- **Name:** Aaqib Abdullah `[user-confirmed]`\n- **Location:** New Delhi, India `[resume-claim]`\n- **Phone:** +91-9818120967 `[resume-claim]`\n- **Email:** aaqibabdullah2006@gmail.com `[resume-claim; confirmed in published JICS paper]`\n- **GitHub:** github.com/afx786 `[verified-code; repos confirm]`\n- **LinkedIn:** https://www.linkedin.com/in/aaqib-abdullah-8620b2292/ `[user-confirmed]`\n- **Instagram:** instagram.com/afx.exe `[user-confirmed]`",
       "keywords": [
+        "profile",
         "confirmed",
         "user",
         "resume",
@@ -599,6 +613,7 @@
       "section": "Positioning",
       "content": "- **Headline / positioning statement:** *\"A data/AI builder who bridges AI, software engineering, and product.\"* `[user-confirmed]`\n- **Primary career tracks (in priority order):**\n  1. AI/ML Engineer\n  2. Data Scientist / Analyst\n  3. Product Manager\n- **Software engineering** is presented as an **underlying capability**, not the primary advertised identity. `[user-confirmed]`\n- **Primary audiences:** recruiters, hiring managers, startup founders. Portfolio must work for all three. `[user-confirmed]`\n- **Visual identity:** existing premium monochrome \"Monolith\" aesthetic. Retained; no redesign during knowledge phase. `[user-confirmed]`",
       "keywords": [
+        "profile",
         "user",
         "confirmed",
         "primary",
@@ -631,6 +646,7 @@
       "section": "Current Status",
       "content": "- Final-year B.Tech CSE student, batch 2023–2027, Gautam Buddha University (Greater Noida). `[user-confirmed]`\n- **AI/LLM Systems Engineer Intern — OpenIdea (Ecosysz Core Solutions Pvt Ltd), Remote.**\n  - Start: 1 June 2026 · Ongoing · Full-time `[user-confirmed]`\n  - Team: ~10 employees; reports to the Founder; works closely with the Founder's Office `[user-confirmed]`\n  - Primary work scope: ONDC + LLM integration, MCP servers, Open-Barter `[user-confirmed]`",
       "keywords": [
+        "profile",
         "user",
         "confirmed",
         "founder",
@@ -663,6 +679,7 @@
       "section": "Attribution Principle",
       "content": "Aaqib is an **intern / contributor** to OpenIdea's products (ONDC BAP, Open-Barter, MCP search infrastructure, WhatsApp POC, n8n automation, job-automation, Bhojpatra). The portfolio must never imply he personally founded or owns OpenIdea's products. Wording pattern: *\"Built/contributed to … as part of my internship at OpenIdea.\"* `[user-confirmed]`",
       "keywords": [
+        "profile",
         "openidea",
         "products",
         "automation",
@@ -727,6 +744,7 @@
       "section": "TIER 1 — PRIMARY PORTFOLIO PROJECTS (priority order) `[user-confirmed]`",
       "content": "### 1. Pyramids — GitHub Repo-Intelligence & Builder-Collaboration Platform\n- **Attribution:** Personal project. **Status:** Live, undergoing beta testing `[user-confirmed]`\n- **URL:** https://pyramids-connect.vercel.app/ `[user-confirmed]`\n- **Repo:** github.com/afx786/pyramids `[verified-code]`\n- **Problem:** Students lack credible project proof and teammates.\n- **What it does:** showcases projects; analyzes GitHub repos; teammates/teams/invites; hackathons; messaging; gamified rank ladder (Explorer→Builder→Creator→Architect→Pyramidion).\n- **Tech:** FastAPI · SQLAlchemy · PostgreSQL · React 18 · Vite · Tailwind · Alembic · JWT (HS256, 60-min) · bcrypt · WebSocket presence.\n- **Verified scale (code):** 163 endpoints (162 HTTP + 1 WebSocket) across 28 routers; 33 DB tables; 11 Alembic migrations; 28 pytest tests. `[verified-code]`\n- **Repo-intelligence engine (deterministic rules, NOT ML):** detects 20 technologies across 5 categories; infers 8 skills; computes a 0–100 repo score over 10 categories. `[verified-code]`\n- **Automation:** daily hackathon-discovery cron scraping 4 sources with 8 concurrent threads; auto-commit JSON. `[verified-code]`\n- **Deployment:** Render (API + managed Postgres), GitHub Pages frontend, Netlify, Vercel; GitHub Actions CI/CD. `[verified-code]`\n- **Caveats:** do NOT call it \"Web3\" or \"decentralized\" or \"AI/ML engine\" (it is a deterministic pattern engine). Resume once said \"27 tests\" — actual 28. No user-count claims. `[verified-code]`\n\n### 2. ONDC Buyer App / BAP — OpenIdea\n- **Attribution:** OpenIdea intern work. **Status:** Implemented, self-tested, certified, **live in production** with real production operation. `[user-confirmed]`\n- **What it does:** ONDC Buyer App implementing the open-network commerce protocol — search/select/init/confirm/status/cancel/update/track/support/rating + all `on_*` callbacks + subscribe; multi-tenant storefronts; Ed25519 signing; registry verification; idempotency; payments ledger; Tocxi logistics integration; IGM flows.\n- **Tech:** Next.js 16 · React 19 · TypeScript · Prisma 7 · PostgreSQL (Supabase) · Vercel.\n- **Verified scale (code):** 21 ONDC protocol handlers (10 outbound + 10 inbound + subscribe); 59 API route files; ~34.3K lines TS/TSX; 6 DB tables; 3 SQL migrations; 7 Vitest unit files. `[verified-code]`\n- **Test harness:** 259/259 self-run ONDC Workbench-style cases (local + prod). Official certification: PASSED (BAP certified). `[verified-code for harness; certification user-confirmed]`\n- **Data layer:** PostgreSQL/Supabase **live in production**. `[user-confirmed]`\n- **Caveats:** Do NOT add \"reduced latency by 40%\". Do not present as awaiting-first-transaction.\n\n### 3. MeTalks — Personalized DistilGPT-2 Chatbot\n- **Attribution:** Personal project. **Status:** Complete (local/Streamlit; no public deployment). `[user-confirmed]`\n- **Repo:** github.com/afx786/MeTalks `[verified-code]`\n- **What it does:** fine-tuned DistilGPT-2 on personal WhatsApp chats to reply in the user's own texting style (English + Hinglish).\n- **Tech:** PyTorch · Hugging Face Transformers · pandas · Streamlit.\n- **Verified metrics (code/notebook):** ETL: 11,781 raw → 9,295 cleaned → 4,924 speaker-merged turns → 2,462 friend→user pairs; 90/10 split (2,215 train / 247 val). Tokenizer extended 50,257→50,261. Two 5-epoch runs (2,770 steps each): loss 6.91→0.91, then 1.057→0.77 (best). Final safetensors ~312.5 MB. `[verified-code]`\n- **Evaluation:** qualitative only (held-out style prompts); controlled decoding (temp 0.6, top_p 0.85, repetition penalty 1.3). `[verified-code]`\n- **Caveats:** no public deployment; no quantitative eval; model weights local-only.\n\n### 4. mcp-openidea-search — MCP Server (v0.1.1)\n- **Attribution:** Contributed to OpenIdea. **Status:** Publicly live on PyPI. `[user-confirmed]`\n- **URL:** [[PH-03]] (PyPI page; known from resume: pypi.org/project/mcp-openidea-search/0.1.1 — confirm live) `[resume-claim]`\n- **What it does:** MCP server exposing OpenIdea's federated search (OpenAlex, arXiv, Zenodo, Software Heritage, GitHub, GitLab, HuggingFace, PapersWithCode, YouTube, CKAN, Figshare, Kaggle) to MCP clients (Claude, Cursor, MCP Inspector).\n- **Tech:** Python · MCP SDK · httpx · pydantic v2 · Starlette/SSE · pytest · respx.\n- **Verified scale (code):** 7 tools (search_papers/code/datasets/models/hardware/videos/all); resource URIs `openidea://<provider>:<id>`; 9 respx-mocked pytest tests; stdio + HTTP transports; wheel/sdist built. `[verified-code]`\n- **Caveats:** thin client — federation/dedup/normalization happens on OpenIdea's side; \"contributed\" framing, not sole authorship.\n\n### 5. Open-Barter / BarterEngine — AI Barter Matching\n- **Attribution:** Prototype built during the OpenIdea internship — attribute to OpenIdea work, NOT an unrelated personal project. `[user-confirmed]`\n- **URL:** https://open-barter.vercel.app/ `[user-confirmed]`\n- **What it does:** matches businesses with Instagram creators for cash-free barter; dual multi-step onboarding → AI match results → campaign brief.\n- **Tech:** Next.js 16 · React 19 · TypeScript · Tailwind v4 · shadcn/ui · Supabase · @google/generative-ai.\n- **Verified (code):** BarterEngine = 14 scoring functions (compatibility, location, category, value balance, ROI, suitability, audience quality, reliability, content quality, brand alignment, offer attractiveness, risk, trust, negotiation) with weighted ranking; **Gemini 2.0 Flash with schema-validated outputs + deterministic fallback + 5-min TTL in-memory cache**; onboarding persisted to Supabase (note: RLS policies are wide-open — security caveat). 41 commits in 2 days, \"Beta complete\". `[verified-code]`\n- **Caveats:** social/campaign features are mocked in-memory; no real matches/users on record; no tests.\n\n---",
       "keywords": [
+        "projects",
         "code",
         "verified",
         "user",
@@ -771,6 +789,7 @@
       "section": "TIER 2 — KEPT ANALYTICS PROJECTS (honestly framed) `[user-confirmed]`",
       "content": "### Trader Behaviour Insights\n- **Repo:** github.com/afx786/trader_behaviour_insights `[verified-code]`\n- **Verified:** ETL of 211,224 on-chain DEX trade fills + 2,644 daily Fear&Greed rows; 32 trader accounts profiled into 11 behavior metrics (332–40,184 trades; −167K to +2.14M PnL); rule-based risk segmentation (8 High / 24 Low risk; 10 flagged for trade-sizing review; 1 auto-trade candidate); correlation heatmap. `[verified-code]`\n- **DEFECT (do not claim):** Fear&Greed epoch parsing bug → sentiment join failed → all `sentiment_profile = Neutral`. Do NOT claim sentiment analysis was performed. Present as \"pandas ETL + risk profiling\". `[verified-code]`\n\n### FAANG Stock Market Analysis\n- **Repo:** github.com/afx786/stock_analysis_project `[verified-code]`\n- **Verified:** yfinance + pandas pipeline, 2,517 daily rows / 9 big-tech tickers (2014–2024); annualized volatility (TSLA 56.1%, NVDA 48.2%, NFLX 44.0%); max drawdowns (META −76.7%, NFLX −75.9%, TSLA −73.6%); return-correlation heatmaps; normalized price curves. `[verified-code]`\n- **DEFECT (do not claim):** 2 of 9 tickers empty (misspelled `ABDE`; GOOGL timeout → 5,034 NaN). Descriptive analytics only — no ML, no decisions. `[verified-code]`\n\n---",
       "keywords": [
+        "projects",
         "verified",
         "code",
         "trader",
@@ -805,6 +824,7 @@
       "section": "OPENIDEA INTERNSHIP SCOPE (built/contributed — include as context, low detail) `[user-confirmed]`",
       "content": "### WhatsApp → Website POC\n- FastAPI scaffold demonstrating WhatsApp→OpenClaw→OpenIdea-engine→website flow; mocked backend behind clean interfaces; Meta webhook-shaped payloads; Dockerfile. `[verified-code]` `[user-confirmed inclusion]`\n- Link: [[PH-05]]\n\n### n8n LeadGen (OpenIdea)\n- Automated B2B lead generation (discovery → dedupe → 0–100 scoring → no-website+phone filter → CRM). `[user-confirmed inclusion]`\n- Detail metrics [[PH-04]] — previously audited (scoring rubric, 3 shipped generations, 606-lead output) but **files not in Phase 1 sources; verify before using numbers**. `[prior-audit]`\n\n### job-automation (OpenIdea)\n- Config-driven job-application automation with approval-gated outreach and a feedback loop. `[user-confirmed inclusion]`\n- Detail metrics [[PH-04]]. `[prior-audit]`\n\n### Bhojpatra (OpenIdea)\n- Event/feast booking platform with marketing site, booking flow, and admin console (vendor KYC/approval, KPI dashboard). `[user-confirmed inclusion]`\n- Link/detail [[PH-04]]. `[prior-audit]`\n\n---",
       "keywords": [
+        "projects",
         "user",
         "confirmed",
         "openidea",
@@ -839,6 +859,7 @@
       "section": "ADDED 2026-08 · Automated Rail Management (KMRL) `[user-confirmed]`",
       "content": "- **Repo:** github.com/afx786/automated_metro_rail_management\n- **Status:** Prototype — **no public deployment** (repo only).\n- **Note:** This repo contains the former `kmrl_planner_with_real_maximo` project, which was previously DROPPED. Re-added by user decision on 2026-08. Framing MUST stay honest.\n- **What it is (verified README/code):** FastAPI + React prototype for KMRL (Kochi Metro) trainset maintenance planning. Consolidates trainset data, **simulated** IoT sensor readings, and job-card data; applies business rules plus ML predictions; generates an optimized nightly maintenance plan (service/standby/maintenance). 25 **synthetic** trainsets (KM01–KM25), SQLite + SQLAlchemy. Two scikit-learn models: certificate-expiry binary classifier and job-card urgency text scorer; rule-based fallback when model files missing. React (Vite) dashboard; API-key auth for admin. `[verified-code]`\n- **Caveats (must not claim):** Maximo connector is **simulated/mock** — no real Maximo data; trainsets are synthetic; \"production-grade metro system\" is false. Do not claim real deployment or validated ML.",
       "keywords": [
+        "projects",
         "kmrl",
         "repo",
         "metro",
@@ -871,6 +892,7 @@
       "section": "ADDED 2026-08 · Dental Anomaly Detection `[user-confirmed]`",
       "content": "- **Repo:** github.com/afx786/dental-anomaly-detection\n- **Status:** Designed & built — **no public deployment** (repo only).\n- **What it is (verified code):** Streamlit app scoring dental X-rays for anomalies via a PyTorch convolutional autoencoder (256×512 grayscale, 128-dim latent); OpenCV CLAHE preprocessing; outputs anomaly score, reconstruction, anomaly heatmap. `[verified-code]`\n- **Caveats:** designed/built only — **no validated results** (no accuracy/eval claims). Do not present validated clinical performance.",
       "keywords": [
+        "projects",
         "anomaly",
         "dental",
         "detection",
@@ -903,6 +925,7 @@
       "section": "ADDED 2026-08 · Recipe Recommender `[user-confirmed]`",
       "content": "- **Repo:** github.com/afx786/recipe_recommender_system\n- **Status:** Built — **no public deployment** (repo only).\n- **What it is (verified code):** Streamlit app with dual-mode recommendation — content-based (TF-IDF over ingredient lists + cosine kNN) and collaborative filtering (user-based kNN over a user-item rating matrix built from review data). `[verified-code]`\n- **Caveats:** no deployment, no user metrics.",
       "keywords": [
+        "projects",
         "user",
         "recipe",
         "recommender",
@@ -949,6 +972,7 @@
       "section": "Published Paper (feature in portfolio)",
       "content": "- **Title:** *A Machine Learning Approach to Classifying Stress Levels Using Psychological and Non-Psychological Features*\n- **Venue:** Journal of Intelligent Computing System (JICS), Vol. 1, Issue 2, pp. 08–13, May 2026. `[verified-paper]`\n- **Authors:** Siddharth Kumar, **Aaqib Abdullah (2nd author)**, Maneet Singh* — Dept. of Information Technology, Gautam Buddha University, Greater Noida, India. `[verified-paper]`\n- **Co-author approval to feature on personal portfolio: CONFIRMED.** `[user-confirmed]`\n- **Link:** Google Drive — https://drive.google.com/file/d/1l2QhNG4DW_pXLyqfU9wB9QUgBdiHusWC/view?usp=drive_link `[user-confirmed]`\n- **Journal issue page / DOI:** [[PH-02]]\n\n### Summary (for accurate description)\n- **Data:** self-administered online survey (1–10 Nov 2025), **110 completed responses**; demographic + lifestyle + all 21 USS (University Stress Scale) items + self-reported stress. `[verified-paper]`\n- **Method:** 4 classifiers (Logistic Regression, SVM, Random Forest, XGBoost) × 3 feature configurations (Model A: non-psychological only; Model B: USS-21 psychological only; Full: combined). 80:20 train/test. Metrics: accuracy, weighted F1, MCC. `[verified-paper]`\n- **Results:** Full feature set → XGBoost best (Accuracy 0.695, MCC 0.557, weighted F1 0.694). Model B (psychological only) → highest accuracy/F1 (0.739/0.739) but lower MCC (0.355). Model A → 0.565/0.363/0.564. `[verified-paper]`\n- **Additional finding:** self-reported vs USS-derived stress disagreed for a subset of students (43 high/high, 35 low/low, 23 self-high/USS-low, 9 self-low/USS-high), supporting the paper's argument that structured scales + ML are more reliable than self-report alone. `[verified-paper]`\n- **Dataset:** available from corresponding author on reasonable request. `[verified-paper]` `[user-confirmed]`\n\n### Accurate headline numbers (safe to use)\n- XGBoost on full feature set: **Accuracy 0.695, MCC 0.557, F1 0.694**.\n- Psychological-only (USS-21) model: **Accuracy 0.739**.\n- Sample: **110 survey responses**.\n\n### Forbidden (contradicted by the paper)\n- \"IEEE Access\" (venue is JICS) — REMOVE.\n- \"2022\" (paper is May 2026) — REMOVE.\n- \"wearable sensor data\" (study used survey data, not wearables) — REMOVE.\n- \"92% F1-score\" (no such result in the paper) — REMOVE.",
       "keywords": [
+        "research",
         "paper",
         "verified",
         "psychological",
@@ -989,6 +1013,7 @@
       "section": "Ongoing / Excluded",
       "content": "- **\"Evaluating LLM Biases in Automated Code Review Systems\":** ongoing study — **DO NOT INCLUDE in portfolio.** `[user-confirmed]`",
       "keywords": [
+        "research",
         "ongoing",
         "excluded",
         "evaluating",
@@ -1042,8 +1067,8 @@
       "section": "overview",
       "content": "**Version:** v1.0 · Status: CANONICAL",
       "keywords": [
-        "knowledge",
         "roles",
+        "knowledge",
         "career",
         "positioning",
         "role",
@@ -1058,6 +1083,7 @@
       "section": "Primary Career Tracks (advertise these) `[user-confirmed]`",
       "content": "1. **AI / ML Engineer**\n2. **Data Scientist / Analyst**\n3. **Product Manager**",
       "keywords": [
+        "roles",
         "primary",
         "career",
         "tracks",
@@ -1078,6 +1104,7 @@
       "section": "Positioning",
       "content": "- **Statement:** *\"A data/AI builder who bridges AI, software engineering, and product.\"* `[user-confirmed]`\n- The visitor must understand: strong software-engineering capability, but primarily positioned around **AI, Data, and Product**. `[user-confirmed]`\n- **Software Engineering** = underlying capability only — NOT a primary advertised role. `[user-confirmed]`",
       "keywords": [
+        "roles",
         "software",
         "engineering",
         "user",
@@ -1109,6 +1136,7 @@
       "section": "Audiences `[user-confirmed]`",
       "content": "- Recruiters · Hiring managers · Startup founders. The portfolio must work for all three.",
       "keywords": [
+        "roles",
         "audiences",
         "user",
         "confirmed",
@@ -1129,6 +1157,7 @@
       "section": "Role-Fit Analysis (evidence-grounded)",
       "content": "| Role | Fit | Key evidence |\n|---|---|---|\n| AI/ML Engineer | STRONG | MeTalks (fine-tune); mcp-openidea-search; Open-Barter (Gemini + fallback); ONDC LLM integration; JICS paper |\n| Data Scientist / Analyst | MODERATE–STRONG | recipe-recommender; trader/FAANG analytics; JICS research; IBM DS cert; Tableau/Power BI (confirmed used) |\n| Product Manager | MODERATE–STRONG | ONDC platform decision; Open-Barter dual-persona UX; n8n lead-scoring/gating; job-automation guardrails; Bhojpatra admin workflows |\n| Software Engineer | CAPABILITY (not identity) | Pyramids; ONDC BAP; backend/API work — shown as strength beneath the primary tracks |",
       "keywords": [
+        "roles",
         "ondc",
         "role",
         "evidence",
@@ -1193,6 +1222,7 @@
       "section": "Languages",
       "content": "| Skill | Status | Evidence |\n|---|---|---|\n| Python | VERIFIED | All ML/backend projects |\n| JavaScript / TypeScript | VERIFIED | Pyramids, Open-Barter, ONDC (React/Next.js) |\n| SQL | VERIFIED | Pyramids schema, ONDC Prisma/PostgreSQL |\n| Java | CLAIMED | Resume only — confirm before listing |\n| R | CLAIMED | Resume only — confirm before listing |",
       "keywords": [
+        "skills",
         "verified",
         "pyramids",
         "ondc",
@@ -1225,6 +1255,7 @@
       "section": "Data Science & Analysis",
       "content": "| Skill | Status | Evidence |\n|---|---|---|\n| Pandas / NumPy / SciPy | VERIFIED | recipe, trader, FAANG, MeTalks |\n| Feature engineering / EDA / statistical analysis | VERIFIED | FAANG, trader, research paper |\n| Matplotlib / Seaborn / Plotly | VERIFIED | FAANG, trader |\n| Tableau | CONFIRMED (used) | `[user-confirmed]` |\n| Power BI | CONFIRMED (used) | `[user-confirmed]` |\n| D3.js | CLAIMED-UNVERIFIED | Remove unless confirmed |",
       "keywords": [
+        "skills",
         "confirmed",
         "verified",
         "trader",
@@ -1257,6 +1288,7 @@
       "section": "Machine Learning / AI",
       "content": "| Skill | Status | Evidence |\n|---|---|---|\n| PyTorch | VERIFIED | MeTalks, dental-anomaly |\n| Hugging Face Transformers | VERIFIED | MeTalks (DistilGPT-2 fine-tune) |\n| Scikit-learn | VERIFIED | recipe, HousePrice (dropped), PredictoPay (dropped) |\n| XGBoost | VERIFIED | research paper, HousePrice (dropped) |\n| TensorFlow / Keras | CLAIMED | PredictoPay (dropped); confirm relevance |\n| OpenCV | VERIFIED | dental-anomaly (CLAHE preprocessing) |\n| Recommendation systems | VERIFIED | recipe-recommender |\n| LLM fine-tuning | VERIFIED | MeTalks |\n| LLM application (Gemini, prompt engineering, MCP, semantic search) | VERIFIED | Open-Barter, mcp-openidea-search, ONDC/LLM integration |\n| RAG | CLAIMED-UNVERIFIED | Remove unless confirmed |\n| Computer vision (autoencoder anomaly detection) | VERIFIED (design/build) | dental-anomaly — phrase as designed/built, not validated results |",
       "keywords": [
+        "skills",
         "verified",
         "anomaly",
         "dropped",
@@ -1289,6 +1321,7 @@
       "section": "Backend & Systems",
       "content": "| Skill | Status | Evidence |\n|---|---|---|\n| FastAPI / Flask | VERIFIED | Pyramids, kmrl (dropped) |\n| SQLAlchemy / Prisma | VERIFIED | Pyramids, ONDC |\n| PostgreSQL / SQLite | VERIFIED | Pyramids, ONDC, kmrl |\n| REST APIs / WebSockets / JWT | VERIFIED | Pyramids, ONDC |\n| Alembic migrations | VERIFIED | Pyramids, ONDC |\n| idempotency / caching / fallback patterns | VERIFIED | ONDC, Open-Barter |\n| Go | CLAIMED-UNVERIFIED | Remove unless confirmed |\n| GraphQL | CLAIMED-UNVERIFIED | Remove unless confirmed |\n| Cloud (AWS/GCP) | CLAIMED-UNVERIFIED | Deployments are Render/Vercel/Netlify/GitHub Pages; do not claim AWS/GCP unless confirmed |",
       "keywords": [
+        "skills",
         "verified",
         "pyramids",
         "ondc",
@@ -1321,6 +1354,7 @@
       "section": "Frontend & Deployment",
       "content": "| Skill | Status | Evidence |\n|---|---|---|\n| React / Next.js | VERIFIED | Pyramids, Open-Barter, ONDC |\n| Tailwind CSS | VERIFIED | Pyramids, Open-Barter |\n| Streamlit | VERIFIED | MeTalks, recipe, dental |\n| Git / GitHub / GitHub Actions | VERIFIED | all repos |\n| Render / Vercel / Netlify / GitHub Pages | VERIFIED | Pyramids, Open-Barter, ONDC |\n| Docker | VERIFIED (minimal) | WhatsApp POC Dockerfile |",
       "keywords": [
+        "skills",
         "verified",
         "pyramids",
         "open",
@@ -1353,6 +1387,7 @@
       "section": "Certifications (prioritized) `[user-confirmed]`",
       "content": "1. IBM Data Science Professional Certificate — link [[PH-01]]\n2. McKinsey Forward Program — link [[PH-01]]\n3. 160 Days of DSA Problem Solving (GeeksforGeeks) — link [[PH-01]]\n4. Mastering GenAI and ChatGPT (provider: **GeeksforGeeks**) — link [[PH-01]] `[user-confirmed provider]`",
       "keywords": [
+        "skills",
         "link",
         "user",
         "confirmed",
